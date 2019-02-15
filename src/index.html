@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span>推荐</span>
+            <span>热点</span>
+            <span>视频</span>
+            <span>版本</span>
+            <span>官方</span>
+        </header>
+        <main class="main">
+            <div class="container">
+                <nav class="nav">
+                    <img src="./images/IMG_0911_03.gif" alt="">
+                </nav>
+
+                <div class="list">
+                    <dl>
+                        <dd></dd>
+                        <dt></dt>
+                    </dl>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <dl>
+                <dt><img src="./images/IMG_0911_17.gif" alt=""></dt>
+                <dd>资讯</dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/IMG_0911_17.gif" alt=""></dt>
+                <dd>盟友</dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/IMG_0911_17.gif" alt=""></dt>
+                <dd>电竞</dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/IMG_0911_17.gif" alt=""></dt>
+                <dd>商城</dd>
+            </dl>
+            <dl>
+                <dt><img src="./images/IMG_0911_17.gif" alt=""></dt>
+                <dd>战绩</dd>
+            </dl>
+        </footer>
+    </div>
+
+    <script>    
+
+        var list = document.querySelector('.list'),
+            data = [
+                {
+                    content: '新闻哥: Dopa竟然厂长哥直播,MXLG并未雪藏',
+                    img: './images/1.gif'
+                },
+                {
+                    content: '新闻哥: Dopa竟然厂长哥直播,MXLG并未雪藏',
+                    img: './images/2.gif'
+                },
+                {
+                    content: '新闻哥: Dopa竟然厂长哥直播,MXLG并未雪藏',
+                    img: './images/3.gif'
+                },
+                {
+                    content: '新闻哥: Dopa竟然厂长哥直播,MXLG并未雪藏',
+                    img: './images/4.gif'
+                },
+                {
+                    content: '新闻哥: Dopa竟然厂长哥直播,MXLG并未雪藏',
+                    img: './images/1.gif'
+                }
+            ];
+
+        var html = "";
+        data.forEach(file=>{
+            html += `<dl>
+                        <dd>${file.content}</dd>
+                        <dt><img src=${file.img}></dt>
+                    </dl>`
+        })
+
+        list.innerHTML = html;
+
+
+
+    </script>
+</body>
+</html>
